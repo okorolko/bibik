@@ -1,0 +1,12 @@
+extends layout
+block content
+    .product-picture__container
+        img(src="../" + product.src).product-picture
+        .product-title__container
+            h1.product-title #{product.name}
+        .product-description__container
+            span.product-description #{product.sizes}
+            span.product-description #{product.price}
+            span.product-description #{product.material}
+            span.product-description #{product.decoration}
+

@@ -1,0 +1,104 @@
+
+@mixin iphone {
+  @media (min-device-width: 320px)
+  and (max-device-width: 736px) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@import "themes/default/variables";
+
+@import "lib/bootstrap/bootstrap";
+//@import "lib/bootstrap-social";
+@import "lib/font-awesome/font-awesome";
+
+//@import "themes/flatly/flatly";
+
+@import "pages/index";
+@import "pages/products";
+@import "pages/product";
+@import "pages/lookbook";
+@import "pages/blog";
+@import "pages/info";
+
+@import "partials/header";
+@import "partials/footer";
+
+
+// Scaffolding
+// -------------------------
+.preloader-container {
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: opacity .7s;
+  opacity: 1;
+  &.not-active {
+    opacity: 0;
+  }
+}
+.main-container{
+  opacity: 1;
+  margin-top: 0px;
+  transition: opacity 1s, transform 1s;
+  transition-delay: .5s;
+  transform: translate3d(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  &.not-active {
+    transform: translate3d(0, 20px, 0);
+    opacity: 0;
+  }
+  //@include desktop {
+    //width: 80%;
+  //}
+}
+html {
+  position: relative;
+  min-height: 100%;
+  font-size: 16px;
+}
+
+body {
+  padding-top: 20px;
+  margin-bottom: 75px;
+}
+.wrapper {
+  margin-top: 30px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+
+  p, ul {
+    margin-bottom: 0;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+// Input Fields
+// -------------------------
+
+textarea {
+  resize: vertical;
+}

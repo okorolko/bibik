@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    .lookbook-container
+        each item, index in lookbook
+            .lookbook__elem
+                img(src=item)

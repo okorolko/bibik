@@ -1,0 +1,34 @@
+.product-picture__container {
+  width: 90%;
+  max-width: 400px;
+  @include ipad {
+    max-width: 500px;
+  }
+  @include desktop {
+    max-width: 600px;
+  }
+}
+.product-description__container,
+.product-title__container{
+  padding-left: 35px;
+}
+.product-title {
+  font-size: 1.2rem;
+  text-align: left;
+  @include ipad {
+    font-size: 1.6rem;
+  }
+  @include desktop {
+    font-size: 1.7rem;
+  }
+}
+.product-description {
+  display: block;
+  margin: 5px 0;
+  @include ipad {
+    font-size: 1.3rem;
+  }
+  @include desktop {
+    font-size: 1.4rem;
+  }
+}

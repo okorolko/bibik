@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    .products__container
+        each item, index in products
+            .products__elem
+                a(href="/products/" + item.id ).products__elem_link
+                    img(src=item.prototype1).products__elem_pic
+                    //img(src=item.prototype2).products__container_elem-hidden
