@@ -1,6 +1,6 @@
 
 var path = './pics/product_pics/';
-
+'./pics/lookbook/jpeg/1.jpg'
 exports.products = {
   "t-shirt-asocialface-black": {
     id: "t-shirt-asocialface-black",
