@@ -12,7 +12,9 @@ $(document).ready(function() {
   var headerLogo = document.querySelectorAll(".header-logo")[0];
   var slidingPartText = document.querySelectorAll(".mobile-menu")[0];
   var link = $(".mobile-menu__elem-link");
+  var desktopLink = $('.menu-desktop__elem-link')
   var item = $( '.mobile-modal' );
+
 
 
   var bodyWrapper =  document.querySelectorAll(".main-container")[0];
@@ -36,9 +38,18 @@ $(document).ready(function() {
         window.location = self.href;
         bodyWrapper.classList.add('fade-out')
       });
-
-
   })
+
+  desktopLink.click(function(e) {
+    e.preventDefault();
+    bodyWrapper.classList.add('fade-out')
+    var self = this;
+    $('.main-container').one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
+      function() {
+        window.location = self.href;
+      });
+  })
+
 
   navIcon.addEventListener( "click", function(e) {
     e.preventDefault();
