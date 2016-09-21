@@ -55,13 +55,13 @@
 .main-container{
   opacity: 1;
   margin-top: 0px;
-  transition: opacity 1s, transform 1s;
+  transition: opacity .2s, transform 1s;
   transition-delay: .5s;
   transform: translate3d(0, 0, 0);
   display: flex;
   justify-content: center;
   &.not-active {
-    transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 15px, 0);
     opacity: 0;
   }
   //@include desktop {
