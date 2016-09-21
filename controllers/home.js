@@ -39,3 +39,9 @@ exports.lookbook = (req, res) => {
     lookbook: lookbook.src
   });
 };
+
+exports.test = (req, res) => {
+  res.render('test', {
+    title: 'Test',
+  });
+};
