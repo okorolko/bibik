@@ -20,6 +20,9 @@
   display: flex;
   justify-content: center;
 
+  //&:hover {
+  //  -webkit-filter: brightness(50%);
+  //}
   @include ipad {
     width: 50%;
     padding: 30px 20px;
@@ -31,8 +34,7 @@
   }
 }
 .products__elem_pic {
-  //display: flex;
-  //align-self: center;
+
 }
 
 

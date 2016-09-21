@@ -31,5 +31,5 @@ exports.src = [
   './pics/lookbook/jpeg/30.jpg',
   './pics/lookbook/jpeg/31.jpg',
   './pics/lookbook/jpeg/32.jpg',
-  './pics/lookbook/jpeg/33.jpg',
+  './pics/lookbook/jpeg/33.jpg'
 ];
