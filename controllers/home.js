@@ -26,6 +26,7 @@ exports.products = (req, res) => {
 exports.product = (req, res) => {
   var reqName = req.url.match(/\/([^\/]+)\/?$/)[1];
   var obj = description.products[reqName];
+  console.log(obj.src2)
   res.render('product', {
     title: obj.name,
     product: obj

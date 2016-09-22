@@ -35,6 +35,7 @@
 
 @import "partials/header";
 @import "partials/footer";
+@import "partials/swiper";
 
 
 // Scaffolding
@@ -46,7 +47,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  transition: opacity .7s;
+  transition: opacity .6s;
+  transition-delay: .2s;
   opacity: 1;
   &.not-active {
     opacity: 0;
@@ -55,9 +57,9 @@
 .main-container{
   opacity: 1;
   margin-top: 0px;
-  transition: opacity .2s, transform 1s;
-  transition-delay: .5s;
+  transition: opacity .3s, transform 1s;
   transform: translate3d(0, 0, 0);
+  transition-delay: .3s;
   display: flex;
   justify-content: center;
   &.not-active {

@@ -10,6 +10,7 @@
   var link = $(".mobile-menu__elem-link");
   var desktopLink = $('.menu-desktop__elem-link')
   var item = $( '.mobile-modal' );
+  var slides = document.querySelectorAll(".swiper-slide").length;
 
 
 
@@ -20,7 +21,7 @@
     setTimeout(function() {
       bodyWrapper.classList.remove('not-active')
       preloader.classList.add('not-active')
-    }, 100)
+    }, 1)
   }
 
 
@@ -28,23 +29,24 @@
     e.preventDefault();
     menuEventsHandler(navIcon, modal, slidingPart, headerLogo, slidingPartText)
     var self = this;
-
     item.one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
       function() {
         window.location = self.href;
-        bodyWrapper.classList.add('fade-out')
+        //bodyWrapper.classList.add('fade-out')
       });
   })
 
-  desktopLink.click(function(e) {
-    e.preventDefault();
-    bodyWrapper.classList.add('fade-out')
-    var self = this;
-    $('.main-container').one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
-      function() {
-        window.location = self.href;
-      });
-  })
+  //desktopLink.click(function(e) {
+    //e.preventDefault();
+    //bodyWrapper.classList.add('fade-out')
+    //var self = this;
+    //$('.main-container').one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
+      //function() {
+        //window.location = self.href;
+        //console.log(window.location)
+
+      //});
+  //})
 
 
   navIcon.addEventListener( "click", function(e) {

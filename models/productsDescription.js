@@ -1,6 +1,5 @@
-
 var path = './pics/product_pics/';
-'./pics/lookbook/jpeg/1.jpg'
+
 exports.products = {
   "t-shirt-asocialface-black": {
     id: "t-shirt-asocialface-black",
@@ -54,31 +53,33 @@ exports.products = {
     material: '100% cotton',
     decoration: 'serigraphy',
     src: path +'asocial__t-shirt-fa-bw-1.jpg',
+    src2: path + 'asocial__t-shirt-fa-bw-2.jpg',
     prototype1: path + 'asocial__t-shirt-fa-bw-proto-1.jpg',
     prototype2: path + 'asocial__t-shirt-fa-bw-proto-2.jpg'
   },
-  "asocial__t-shirt-fa-bw-2": {
-    id: "asocial__t-shirt-fa-bw-2",
-    name: 'T-shirt Fa b/w',
-    sizes: 'sizes: s, m, l',
-    price: 'price: 2500 RUB',
-    material: '100% cotton',
-    decoration: 'serigraphy',
-    src: path +'asocial__t-shirt-fa-bw-2.jpg',
-    prototype1: path + 'asocial__t-shirt-fa-bw-proto-1.jpg',
-    prototype2: path + 'asocial__t-shirt-fa-bw-proto-2.jpg'
-  },
-  "asocial__t-shirt-fa-colour": {
-    id: "asocial__t-shirt-fa-colour",
-    name: 'T-shirt Fa colour',
-    sizes: 'sizes: s, m, l',
-    price: 'price: 2500 RUB',
-    material: '100% cotton',
-    decoration: 'embroidery',
-    src: path +'asocial__t-shirt-fa-bw-1.jpg',
-    prototype1: path + 'asocial__t-shirt-fa-bw-proto-1.jpg',
-    prototype2: path + 'asocial__t-shirt-fa-bw-proto-2.jpg'
-  },
+  // "asocial__t-shirt-fa-bw-2": {
+  //   id: "asocial__t-shirt-fa-bw-2",
+  //   name: 'T-shirt Fa b/w',
+  //   sizes: 'sizes: s, m, l',
+  //   price: 'price: 2500 RUB',
+  //   material: '100% cotton',
+  //   decoration: 'serigraphy',
+  //   src: path +'asocial__t-shirt-fa-bw-2.jpg',
+  //   prototype1: path + 'asocial__t-shirt-fa-bw-proto-1.jpg',
+  //   prototype2: path + 'asocial__t-shirt-fa-bw-proto-2.jpg'
+  // },
+  // TUT KOSIAK
+  // "asocial__t-shirt-fa-colour": {
+  //   id: "asocial__t-shirt-fa-colour",
+  //   name: 'T-shirt Fa colour',
+  //   sizes: 'sizes: s, m, l',
+  //   price: 'price: 2500 RUB',
+  //   material: '100% cotton',
+  //   decoration: 'embroidery',
+  //   src: path +'asocial__t-shirt-fa-bw-1.jpg',
+  //   prototype1: path + 'asocial__t-shirt-fa-bw-proto-1.jpg',
+  //   prototype2: path + 'asocial__t-shirt-fa-bw-proto-2.jpg'
+  // },
   "asocial__t-shirt-fa-white-1": {
     id: "asocial__t-shirt-fa-white-1",
     name: 'T-shirt Fa white',
@@ -87,20 +88,21 @@ exports.products = {
     material: '100% cotton',
     decoration: 'serigraphy',
     src: path +'asocial__t-shirt-fa-white-1.jpg',
+    src2: path +'asocial__t-shirt-fa-white-2.jpg',
     prototype1: path + 'asocial__t-shirt-fa-white-proto-1.jpg',
     prototype2: path + 'asocial__t-shirt-fa-white-proto-2.jpg'
   },
-  "asocial__t-shirt-fa-white-2": {
-    id: "asocial__t-shirt-fa-white-2",
-    name: 'T-shirt Fa white',
-    sizes: 'sizes: s, m, l',
-    price: 'price: 2300 RUB',
-    material: '100% cotton',
-    decoration: 'serigraphy',
-    src: path +'asocial__t-shirt-fa-white-2.jpg',
-    prototype1: path + 'asocial__t-shirt-fa-white-proto-1.jpg',
-    prototype2: path + 'asocial__t-shirt-fa-white-proto-2.jpg'
-  },
+  // "asocial__t-shirt-fa-white-2": {
+  //   id: "asocial__t-shirt-fa-white-2",
+  //   name: 'T-shirt Fa white',
+  //   sizes: 'sizes: s, m, l',
+  //   price: 'price: 2300 RUB',
+  //   material: '100% cotton',
+  //   decoration: 'serigraphy',
+  //   src: path +'asocial__t-shirt-fa-white-2.jpg',
+  //   prototype1: path + 'asocial__t-shirt-fa-white-proto-1.jpg',
+  //   prototype2: path + 'asocial__t-shirt-fa-white-proto-2.jpg'
+  // },
   "asocial__t-shirt-goth-black": {
     id: "asocial__t-shirt-goth-black",
     name: 'T-shirt Goth black',
@@ -142,20 +144,21 @@ exports.products = {
     material: '100% cotton',
     decoration: 'embroidery',
     src: path +'asocial__t-shirt-goth-white-1.jpg',
+    src2: path +'asocial__t-shirt-goth-white-1.jpg',
     prototype1: path + 'asocial__t-shirt-goth-white-proto-1.jpg',
     prototype2: path + 'asocial__t-shirt-goth-white-proto-2.jpg'
   },
-  "asocial__t-shirt-goth-white-2": {
-    id: "asocial__t-shirt-goth-white-2",
-    name: 'T-shirt Goth white',
-    sizes: 'sizes: s, m, l',
-    price: 'price: 2300 RUB',
-    material: '100% cotton',
-    decoration: 'embroidery',
-    src: path +'asocial__t-shirt-goth-white-1.jpg',
-    prototype1: path + 'asocial__t-shirt-goth-white-proto-1.jpg',
-    prototype2: path + 'asocial__t-shirt-goth-white-proto-2.jpg'
-  },
+  // "asocial__t-shirt-goth-white-2": {
+  //   id: "asocial__t-shirt-goth-white-2",
+  //   name: 'T-shirt Goth white',
+  //   sizes: 'sizes: s, m, l',
+  //   price: 'price: 2300 RUB',
+  //   material: '100% cotton',
+  //   decoration: 'embroidery',
+  //   src: path +'asocial__t-shirt-goth-white-1.jpg',
+  //   prototype1: path + 'asocial__t-shirt-goth-white-proto-1.jpg',
+  //   prototype2: path + 'asocial__t-shirt-goth-white-proto-2.jpg'
+  // },
   "asocial__t-shirt-mediumcool-black-1": {
     id: "asocial__t-shirt-mediumcool-black-1",
     name: 'T-shirt Medium cool black',
@@ -164,20 +167,21 @@ exports.products = {
     material: '100% cotton',
     decoration: 'embroidery',
     src: path +'asocial__t-shirt-mediumcool-black-1.jpg',
+    src2: path +'asocial__t-shirt-mediumcool-black-2.jpg',
     prototype1: path + 'asocial__t-shirt-mediumcool-black-proto-1.jpg',
     prototype2: path + 'asocial__t-shirt-mediumcool-black-proto-2.jpg'
   },
-  "asocial__t-shirt-mediumcool-black-2": {
-    id: "asocial__t-shirt-mediumcool-black-2",
-    name: 'T-shirt Medium cool black',
-    sizes: 'sizes: s, m, l',
-    price: 'price: 2300 RUB',
-    material: '100% cotton',
-    decoration: 'embroidery',
-    src: path +'asocial__t-shirt-mediumcool-black-2.jpg',
-    prototype1: path + 'asocial__t-shirt-mediumcool-black-proto-1.jpg',
-    prototype2: path + 'asocial__t-shirt-mediumcool-black-proto-2.jpg'
-  },
+  // "asocial__t-shirt-mediumcool-black-2": {
+  //   id: "asocial__t-shirt-mediumcool-black-2",
+  //   name: 'T-shirt Medium cool black',
+  //   sizes: 'sizes: s, m, l',
+  //   price: 'price: 2300 RUB',
+  //   material: '100% cotton',
+  //   decoration: 'embroidery',
+  //   src: path +'asocial__t-shirt-mediumcool-black-2.jpg',
+  //   prototype1: path + 'asocial__t-shirt-mediumcool-black-proto-1.jpg',
+  //   prototype2: path + 'asocial__t-shirt-mediumcool-black-proto-2.jpg'
+  // },
   "asocial__t-shirt-mediumcool-pink-1": {
     id: "asocial__t-shirt-mediumcool-pink-1",
     name: 'T-shirt Medium cool pink',
@@ -186,20 +190,21 @@ exports.products = {
     material: '100% cotton',
     decoration: 'embroidery',
     src: path +'asocial__t-shirt-mediumcool-pink-1.jpg',
+    src2: path +'asocial__t-shirt-mediumcool-pink-2.jpg',
     prototype1: path + 'asocial__t-shirt-mediumcool-pink-proto-1.jpg',
     prototype2: path + 'asocial__t-shirt-mediumcool-pink-proto-2.jpg'
   },
-  "asocial__t-shirt-mediumcool-pink-2": {
-    id: "asocial__t-shirt-mediumcool-pink-2",
-    name: 'T-shirt Medium cool pink',
-    sizes: 'sizes: s, m, l',
-    price: 'price: 2300 RUB',
-    material: '100% cotton',
-    decoration: 'embroidery',
-    src: path +'asocial__t-shirt-mediumcool-pink-2.jpg',
-    prototype1: path + 'asocial__t-shirt-mediumcool-pink-proto-1.jpg',
-    prototype2: path + 'asocial__t-shirt-mediumcool-pink-proto-2.jpg'
-  },
+  // "asocial__t-shirt-mediumcool-pink-2": {
+  //   id: "asocial__t-shirt-mediumcool-pink-2",
+  //   name: 'T-shirt Medium cool pink',
+  //   sizes: 'sizes: s, m, l',
+  //   price: 'price: 2300 RUB',
+  //   material: '100% cotton',
+  //   decoration: 'embroidery',
+  //   src: path +'asocial__t-shirt-mediumcool-pink-2.jpg',
+  //   prototype1: path + 'asocial__t-shirt-mediumcool-pink-proto-1.jpg',
+  //   prototype2: path + 'asocial__t-shirt-mediumcool-pink-proto-2.jpg'
+  // },
   "asocial__t-shirt-mediumcool-pw": {
     id: "asocial__t-shirt-mediumcool-pw",
     name: 'T-shirt Medium cool p/w',
@@ -219,18 +224,118 @@ exports.products = {
     material: '100% cotton',
     decoration: 'serigraphy',
     src: path +'asocial__t-shirt-soldout-white-1.jpg',
+    src2: path +'asocial__t-shirt-soldout-white-2.jpg',
     prototype1: path + 'asocial__t-shirt-soldout-white-proto-1.jpg',
     prototype2: path + 'asocial__t-shirt-soldout-white-proto-2.jpg'
   },
-  "asocial__t-shirt-soldout-white-2": {
-    id: "asocial__t-shirt-soldout-white-2",
-    name: 'T-shirt Sold out white',
-    sizes: 'sizes: s, m, l',
-    price: 'price: 2800 RUB',
+  // "asocial__t-shirt-soldout-white-2": {
+  //   id: "asocial__t-shirt-soldout-white-2",
+  //   name: 'T-shirt Sold out white',
+  //   sizes: 'sizes: s, m, l',
+  //   price: 'price: 2800 RUB',
+  //   material: '100% cotton',
+  //   decoration: 'serigraphy',
+  //   src: path +'asocial__t-shirt-soldout-white-2.jpg',
+  //   prototype1: path + 'asocial__t-shirt-soldout-white-proto-1.jpg',
+  //   prototype2: path + 'asocial__t-shirt-soldout-white-proto-2.jpg'
+  // }
+  "cap-asocialface-black": {
+    id: "cap-asocialface-black",
+    name: 'Cap Asocial face black',
+    sizes: 'one size',
+    price: 'price: 2100 RUB',
     material: '100% cotton',
-    decoration: 'serigraphy',
-    src: path +'asocial__t-shirt-soldout-white-2.jpg',
-    prototype1: path + 'asocial__t-shirt-soldout-white-proto-1.jpg',
-    prototype2: path + 'asocial__t-shirt-soldout-white-proto-2.jpg'
+    decoration: 'embroidery',
+    src: path + 'asocial__cap-asocialface-black-1.jpg',
+    prototype1: path + 'asocial__t-shirt-asocialface-black-proto-1.jpg',
+    prototype2: path + 'asocial__t-shirt-asocialface-black-proto-2.jpg'
+  },
+  "cap-asocialface-white": {
+    id: "cap-asocialface-white",
+    name: 'Cap Asocial face white',
+    sizes: 'sizes: one size',
+    price: 'price: 2100 RUB',
+    material: '100% cotton',
+    decoration: 'embroidery',
+    src: path + 'asocial__cap-asocialface-white-1.jpg',
+    prototype1: path + 'asocial__cap-asocialface-white-proto-1.jpg',
+    prototype2: path + 'asocial__cap-asocialface-white-proto-2.jpg'
+  },
+  "cap-asocialface-pink": {
+    id: "cap-asocialface-pink",
+    name: 'Cap Asocial face pink',
+    sizes: 'sizes: one size',
+    price: 'price: 2100 RUB',
+    material: '100% cotton',
+    decoration: 'embroidery',
+    src: path + 'asocial__cap-asocialface-pink-1.jpg',
+    prototype1: path + 'asocial__cap-asocialface-pink-proto-1.jpg',
+    prototype2: path + 'asocial__cap-asocialface-pink-proto-2.jpg'
+  },
+  "asocial__cap-goth-black": {
+    id: "asocial__cap-goth-black",
+    name: 'Cap Goth black',
+    sizes: 'sizes: one size',
+    price: 'price: 2100 RUB',
+    material: '100% cotton',
+    decoration: 'embroidery',
+    src: path + 'asocial__cap-goth-black-1.jpg',
+    prototype1: path + 'asocial__cap-goth-black-proto-1.jpg',
+    prototype2: path + 'asocial__cap-goth-black-proto-2.jpg'
+  },
+  "asocial__cap-goth-pink": {
+    id: "asocial__cap-goth-pink",
+    name: 'Cap Goth pink',
+    sizes: 'sizes: one size',
+    price: 'price: 2100 RUB',
+    material: '100% cotton',
+    decoration: 'embroidery',
+    src: path + 'asocial__cap-goth-pink-1.jpg',
+    prototype1: path + 'asocial__cap-goth-pink-proto-1.jpg',
+    prototype2: path + 'asocial__cap-goth-pink-proto-2.jpg'
+  },
+  "asocial__cap-goth-white": {
+    id: "asocial__cap-goth-white",
+    name: 'Cap Goth white',
+    sizes: 'sizes: one size',
+    price: 'price: 2100 RUB',
+    material: '100% cotton',
+    decoration: 'embroidery',
+    src: path + 'asocial__cap-goth-white-1.jpg',
+    prototype1: path + 'asocial__cap-goth-white-proto-1.jpg',
+    prototype2: path + 'asocial__cap-goth-white-proto-2.jpg'
+  },
+  "asocial__cap-mediumcool-black": {
+    id: "asocial__cap-mediumcool-black",
+    name: 'Cap Medium cool black',
+    sizes: 'sizes: one size',
+    price: 'price: 2100 RUB',
+    material: '100% cotton',
+    decoration: 'embroidery',
+    src: path + 'asocial__cap-mediumcool-black-1.jpg',
+    prototype1: path + 'asocial__cap-mediumcool-black-proto-1.jpg',
+    prototype2: path + 'asocial__cap-mediumcool-black-proto-2.jpg'
+  },
+  "asocial__cap-mediumcool-pink": {
+    id: "asocial__cap-mediumcool-pink",
+    name: 'Cap Medium cool pink',
+    sizes: 'sizes: one size',
+    price: 'price: 2100 RUB',
+    material: '100% cotton',
+    decoration: 'embroidery',
+    src: path + 'asocial__cap-mediumcool-pink-1.jpg',
+    prototype1: path + 'asocial__cap-mediumcool-pink-proto-1.jpg',
+    prototype2: path + 'asocial__cap-mediumcool-pink-proto-2.jpg'
+  },
+  "asocial__cap-mediumcool-white": {
+    id: "asocial__cap-mediumcool-white",
+    name: 'Cap Medium cool white',
+    sizes: 'sizes: one size',
+    price: 'price: 2100 RUB',
+    material: '100% cotton',
+    decoration: 'embroidery',
+    src: path + 'asocial__cap-mediumcool-white-1.jpg',
+    prototype1: path + 'asocial__cap-mediumcool-white-proto-1.jpg',
+    prototype2: path + 'asocial__cap-mediumcool-white-proto-2.jpg'
   }
 };
