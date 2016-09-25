@@ -1,0 +1,255 @@
+//Header//
+
+.mobile-modal {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0);
+  transition: background-color, visibility;
+  transition-duration: .8s;
+  transition-delay: .2s;
+}
+.mobile-modal.is-active {
+  visibility: visible;
+  background-color: rgba(105,0,64,0.4);
+}
+.header-container {
+  position: relative;
+  margin: auto;
+  height: 100px;
+  width: 100%;
+}
+.header-logo {
+  text-align: center;
+  font-size: 4rem;
+  margin: 0;
+  fill: #000;
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition-property: fill;
+  transition-duration: 1s;
+  width: 200px;
+  @include ipad {
+    width: 250px;
+  }
+  @include desktop {
+    width: 300px;
+  }
+}
+.header-logo.is-active {
+  fill: #fff;
+  transition: fill;
+  transition-duration: 1s;
+}
+.navigation-bar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 600px;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  padding: 0;
+  font-size: 1.5rem;
+}
+.c-hamburger {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+  @include desktop {
+    display: none;
+  }
+}
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 18px;
+  left: 5px;
+  right: 5px;
+  height: 5px;
+  background: #000;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #000;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: -11px;
+}
+
+.c-hamburger span::after {
+  bottom: -11px;
+}
+.c-hamburger:focus {
+  outline: none;
+}
+.c-hamburger--htx {
+  background-color: rgba(0,0,0,0);
+}
+
+.c-hamburger--htx span {
+  transition: background, background-color 0s 0.3s;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  //background-color: #fff;
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.35s, 0s;
+}
+.c-hamburger--htx span::before {
+  transition-property: top, transform;
+}
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.c-hamburger--htx.is-active {
+  background-color: rgba(0,0,0,0);
+}
+
+.c-hamburger--htx.is-active span {
+  background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+  background-color: #fff;
+}
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+  background-color: #fff;
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.35s;
+}
+.mobile-menu__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: #000;
+  z-index: 1;
+  transition: height;
+  transition-duration: .6s;
+  overflow: hidden;
+}
+.mobile-menu__container.is-active {
+  height: 350px;
+}
+.mobile-menu {
+  margin-top: 128px;
+  padding: 0;
+  color: #fff;
+  opacity: 0;
+  transition: opacity;
+  transition-duration: 1.5s;
+}
+.mobile-menu.is-active {
+  opacity: 1;
+}
+.mobile-menu__elem {
+  text-align: center;
+  margin-top: 13px;
+}
+.mobile-menu__elem-link {
+  font-size: 1.5rem;
+  text-align: center;
+  color: inherit;
+  transition: color .2s ease-in-out;
+  &:focus {
+    color: rgb(255,255,255);
+    text-decoration: none;
+  }
+  &:hover {
+    color: rgb(239,185,216);
+    text-decoration: none;
+  }
+}
+
+
+
+// DESKTOP MENU
+.menu-desktop__container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 700px;
+  align-items: center;
+  margin: auto;
+  padding: 0;
+  font-size: 1.6rem;
+  padding-top: 30px;
+  @include iphone {
+    display: none;
+  }
+  @include ipad {
+    display: none;
+  }
+}
+.menu-desktop {
+  display: flex;
+  width: 700px;
+  justify-content: space-between;
+  align-self: center;
+  padding-left: 0;
+  @include iphone {
+    display: none;
+  }
+  @include ipad {
+    display: none;
+  }
+}
+.menu-desktop__elem-link {
+  color: #000;
+  transition: color .15s ease-in-out;
+  &:focus {
+    color: #000;
+    text-decoration: none;
+  }
+  &:hover {
+    color: rgb(239,185,216);
+    text-decoration: none;
+  }
+}

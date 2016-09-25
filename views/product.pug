@@ -1,0 +1,26 @@
+extends layout
+block content
+    .product-picture__container
+        .swiper-container.swiper-fixed
+            .swiper-wrapper
+                .swiper-slide
+                    img(src="../" + product.src).product-picture
+                if product.src2
+                    .swiper-slide
+                        img(src="../" + product.src2).product-picture
+
+            // Add Pagination
+            .swiper-pagination
+            // Add Arrows
+            if product.src2
+                .swiper-button-next
+                .swiper-button-prev
+
+        .product-title__container
+            h1.product-title #{product.name}
+        .product-description__container
+            span.product-description #{product.sizes}
+            span.product-description #{product.price}
+            span.product-description #{product.material}
+            span.product-description #{product.decoration}
+

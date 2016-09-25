@@ -1,0 +1,9 @@
+extends layout
+block content
+    .blog-container
+        each item, index in myRecentMedia
+            .blog-elem
+                a(href=item.link)
+                    img(src=item.images.standard_resolution.url)
+
+

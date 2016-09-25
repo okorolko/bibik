@@ -1,0 +1,48 @@
+.products__container {
+  position: relative;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: space-between;
+  &:hover .products__container_elem-hidden {
+    opacity: 1;
+  }
+  @include desktop {
+    padding: 40px 0;
+  }
+}
+.products__elem {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+
+  //&:hover {
+  //  -webkit-filter: brightness(50%);
+  //}
+  @include ipad {
+    width: 50%;
+    padding: 30px 20px;
+  }
+  @include desktop {
+    align-self: center;
+    width: 33.33%;
+    padding: 30px 20px
+  }
+}
+.products__elem_pic {
+
+}
+
+
+
+.products__container_elem-hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .2s;
+}
