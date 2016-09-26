@@ -104,11 +104,9 @@
   background-color: #000;
   content: "";
 }
-
 .c-hamburger span::before {
   top: -11px;
 }
-
 .c-hamburger span::after {
   bottom: -11px;
 }
@@ -118,14 +116,11 @@
 .c-hamburger--htx {
   background-color: rgba(0,0,0,0);
 }
-
 .c-hamburger--htx span {
   transition: background, background-color 0s 0.3s;
 }
-
 .c-hamburger--htx span::before,
 .c-hamburger--htx span::after {
-  //background-color: #fff;
   transition-duration: 0.3s, 0.3s;
   transition-delay: 0.35s, 0s;
 }
@@ -140,11 +135,9 @@
 .c-hamburger--htx.is-active {
   background-color: rgba(0,0,0,0);
 }
-
 .c-hamburger--htx.is-active span {
   background: none;
 }
-
 .c-hamburger--htx.is-active span::before {
   top: 0;
   transform: rotate(45deg);
@@ -205,8 +198,6 @@
     text-decoration: none;
   }
 }
-
-
 
 // DESKTOP MENU
 .menu-desktop__container {
