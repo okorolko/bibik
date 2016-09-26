@@ -18,6 +18,7 @@ const passport = require('passport');
 const expressValidator = require('express-validator');
 const sass = require('node-sass-middleware');
 const multer = require('multer');
+const assets = require('express-asset-versions');
 const upload = multer({
 	dest: path.join(__dirname, 'uploads')
 });
@@ -112,9 +113,14 @@ app.use(function(req, res, next) {
 	}
 	next();
 });
-app.use(express.static(path.join(__dirname, 'public'), {
-	maxAge: 31557600000
-}));
+
+const assetPath = path.join(__dirname, 'public');
+app.use('/', express.static(assetPath));
+app.use(assets('/', assetPath));
+
+// app.use(express.static(path.join(__dirname, 'public'), {
+// 	maxAge: 31557600000
+// }));
 
 /**
  * Primary app routes.

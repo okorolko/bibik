@@ -18,7 +18,8 @@ html
 
     title Bibik - #{title}
     link(rel='shortcut icon', href='/favicon.png')
-    link(rel='stylesheet', href='/css/style.css')
+    //-link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href=asset('css/style.css'))
   body
     .preloader-container
       img(src="/pics/loader/hearts.svg")
@@ -33,7 +34,8 @@ html
     script(src='/js/lib/jquery-2.2.4.min.js')
     //-script(src='/js/lib/bootstrap.min.js')
     script(src='/js/swiper.js')
-    script(src='/js/bundle.js')
+    //-script(src='/js/bundle.js')
+    script(src=asset('js/bundle.js'))
 
     //- Initialize Swiper
     script.
