@@ -5864,6 +5864,11 @@ button.close {
     .product-picture__container {
       max-width: 700px; } }
 
+@media (min-device-width: 320px) and (max-device-width: 736px) {
+  .product-description__container,
+  .product-title__container {
+    padding-left: 35px; } }
+
 .product-title {
   font-size: 1.2rem;
   text-align: left;
