@@ -1,4 +1,4 @@
-
+//
 @mixin iphone {
   @media (min-device-width: 320px)
   and (max-device-width: 736px) {
@@ -22,7 +22,7 @@
 
 @import "lib/bootstrap/bootstrap";
 //@import "lib/bootstrap-social";
-@import "lib/font-awesome/font-awesome";
+//@import "lib/font-awesome/font-awesome";
 
 //@import "themes/flatly/flatly";
 
@@ -65,7 +65,6 @@
     transform: translate3d(0, 15px, 0);
     opacity: 0;
   }
-
 }
 .fade-out {
   opacity: 0;
