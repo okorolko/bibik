@@ -232,7 +232,6 @@ app.get('/api/instagram', apiController.getInstagram);
  * 404
  */
 app.use(function(req, res, next) {
-	// res.status(404).send('Sorry cant find that!');
 	res.status(404);
 	res.render('404', {
 		error: '404'
