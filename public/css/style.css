@@ -5824,7 +5824,7 @@ button.close {
   flex-direction: row;
   flex-wrap: wrap;
   align-self: center;
-  justify-content: space-between; }
+  justify-content: flex-start; }
   .products__container:hover .products__container_elem-hidden {
     opacity: 1; }
   @media (min-width: 1024px) {
@@ -5846,13 +5846,6 @@ button.close {
       align-self: center;
       width: 33.33%;
       padding: 30px 20px; } }
-
-.products__container_elem-hidden {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity .2s; }
 
 .product-picture__container {
   width: 90%;
