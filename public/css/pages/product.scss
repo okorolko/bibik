@@ -2,10 +2,12 @@
   width: 90%;
   max-width: 400px;
   @include ipad {
-    max-width: 500px;
+    padding-top: 20px;
+    max-width: 550px;
   }
   @include desktop {
     max-width: 700px;
+    padding-top: 20px;
   }
 }
 .product-description__container,
@@ -13,19 +15,23 @@
   @include iphone {
     padding-left: 35px;
   }
-  //padding-left: 35px;
-  // padding-left: 60px;
+  @include ipad {
+    padding-left: 60px;
+  }
+  @include desktop {
+    padding-left: 80px;
+  }
 }
 .product-title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: left;
   color: black;
   font-family: sans-serif;
   @include ipad {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   @include desktop {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 }
 .product-description {
@@ -34,10 +40,10 @@
   color: black;
   font-family: sans-serif;
   @include ipad {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   @include desktop {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 .swiper-fixed {

@@ -4,7 +4,7 @@ exports.products = {
 	"t-shirt-asocialface-black": {
 		id: "t-shirt-asocialface-black",
 		name: 'T-shirt Asocialface black',
-		sizes: 'sizes: s, m, l',
+		sizes: 'sizes: S, M, L',
 		price: 'price: 2300 RUB',
 		material: '100% cotton',
 		decoration: 'embroidery',
@@ -15,7 +15,7 @@ exports.products = {
 	"t-shirt-asocialface-bw": {
 		id: "t-shirt-asocialface-bw",
 		name: 'T-shirt Asocialface bw',
-		sizes: 'sizes: s, m, l',
+		sizes: 'sizes: S, M, L',
 		price: 'price: 2300 RUB',
 		material: '100% cotton',
 		decoration: 'embroidery',
@@ -26,7 +26,7 @@ exports.products = {
 	"t-shirt-asocialface-pink": {
 		id: "t-shirt-asocialface-pink",
 		name: 'T-shirt Asocialface pink',
-		sizes: 'sizes: s, m, l',
+		sizes: 'sizes: S, M, L',
 		price: 'price: 2300 RUB',
 		material: '100% cotton',
 		decoration: 'embroidery',
@@ -37,7 +37,7 @@ exports.products = {
 	"t-shirt-asocialface-white": {
 		id: "t-shirt-asocialface-white",
 		name: 'T-shirt Asocialface white',
-		sizes: 'sizes: s, m, l',
+		sizes: 'sizes: S, M, L',
 		price: 'price: 2300 RUB',
 		material: '100% cotton',
 		decoration: 'embroidery',
@@ -48,7 +48,7 @@ exports.products = {
 	"asocial__t-shirt-fa-bw-1": {
 		id: "asocial__t-shirt-fa-bw-1",
 		name: 'T-shirt Fa b/w',
-		sizes: 'sizes: s, m, l',
+		sizes: 'sizes: S, M, L',
 		price: 'price: 2500 RUB',
 		material: '100% cotton',
 		decoration: 'serigraphy',
@@ -60,7 +60,7 @@ exports.products = {
 	"asocial__t-shirt-fa-white-1": {
 		id: "asocial__t-shirt-fa-white-1",
 		name: 'T-shirt Fa white',
-		sizes: 'sizes: s, m, l',
+		sizes: 'sizes: S, M, L',
 		price: 'price: 2300 RUB',
 		material: '100% cotton',
 		decoration: 'serigraphy',
@@ -72,7 +72,7 @@ exports.products = {
 	"asocial__t-shirt-goth-black": {
 		id: "asocial__t-shirt-goth-black",
 		name: 'T-shirt Goth black',
-		sizes: 'sizes: s, m, l',
+		sizes: 'sizes: S, M, L',
 		price: 'price: 2300 RUB',
 		material: '100% cotton',
 		decoration: 'embroidery',
@@ -83,7 +83,7 @@ exports.products = {
 	"asocial__t-shirt-goth-bw": {
 		id: "asocial__t-shirt-goth-bw",
 		name: 'T-shirt Goth b/w',
-		sizes: 'sizes: s, m, l',
+		sizes: 'sizes: S, M, L',
 		price: 'price: 2300 RUB',
 		material: '100% cotton',
 		decoration: 'embroidery',
@@ -94,7 +94,7 @@ exports.products = {
 	"asocial__t-shirt-goth-pink": {
 		id: "asocial__t-shirt-goth-pink",
 		name: 'T-shirt Goth pink',
-		sizes: 'sizes: s, m, l',
+		sizes: 'sizes: S, M, L',
 		price: 'price: 2300 RUB',
 		material: '100% cotton',
 		decoration: 'embroidery',
@@ -105,7 +105,7 @@ exports.products = {
 	"asocial__t-shirt-goth-white": {
 		id: "asocial__t-shirt-goth-white",
 		name: 'T-shirt Goth white',
-		sizes: 'sizes: s, m, l',
+		sizes: 'sizes: S, M, L',
 		price: 'price: 2300 RUB',
 		material: '100% cotton',
 		decoration: 'embroidery',
@@ -116,7 +116,7 @@ exports.products = {
 	"asocial__t-shirt-mediumcool-black-1": {
 		id: "asocial__t-shirt-mediumcool-black-1",
 		name: 'T-shirt Medium cool black',
-		sizes: 'sizes: s, m, l',
+		sizes: 'sizes: S, M, L',
 		price: 'price: 2300 RUB',
 		material: '100% cotton',
 		decoration: 'embroidery',
@@ -128,7 +128,7 @@ exports.products = {
 	"asocial__t-shirt-mediumcool-pink-1": {
 		id: "asocial__t-shirt-mediumcool-pink-1",
 		name: 'T-shirt Medium cool pink',
-		sizes: 'sizes: s, m, l',
+		sizes: 'sizes: S, M, L',
 		price: 'price: 2300 RUB',
 		material: '100% cotton',
 		decoration: 'embroidery',
@@ -140,7 +140,7 @@ exports.products = {
 	"asocial__t-shirt-mediumcool-pw": {
 		id: "asocial__t-shirt-mediumcool-pw",
 		name: 'T-shirt Medium cool p/w',
-		sizes: 'sizes: s, m, l',
+		sizes: 'sizes: S, M, L',
 		price: 'price: 2500 RUB',
 		material: '100% cotton',
 		decoration: 'embroidery',
@@ -152,7 +152,7 @@ exports.products = {
 	"asocial__t-shirt-soldout-white-1": {
 		id: "asocial__t-shirt-soldout-white-1",
 		name: 'T-shirt Sold out white',
-		sizes: 'sizes: s, m, l',
+		sizes: 'sizes: S, M, L',
 		price: 'price: 2800 RUB',
 		material: '100% cotton',
 		decoration: 'serigraphy',

@@ -5,5 +5,7 @@ block content
         each item, index in products
             .products__elem
                 a(href="/products/" + item.id ).products__elem_link
+                    .img-overlay
                     img(src=item.prototype1).products__elem_pic
+
                     //img(src=item.prototype2).products__container_elem-hidden

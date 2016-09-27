@@ -211,7 +211,6 @@
   margin: auto;
   padding: 0;
   font-size: 1.6rem;
-  padding-top: 30px;
   @include iphone {
     display: none;
   }
@@ -232,15 +231,36 @@
     display: none;
   }
 }
+// .menu-desktop__elem-link {
+//   color: #000;
+//   transition: color .15s ease-in-out;
+//   &:focus {
+//     color: #000;
+//     text-decoration: none;
+//   }
+//   &:hover {
+//     // color: rgb(239,185,216);
+//     text-decoration: none;
+//   }
+// }
+.menu-desktop__elem-link-inner {
+  padding: 20px 30px;
+  transition: background .3s ease-in-out;
+}
 .menu-desktop__elem-link {
   color: #000;
-  transition: color .15s ease-in-out;
+  text-decoration: none;
   &:focus {
-    color: #000;
-    text-decoration: none;
-  }
-  &:hover {
-    color: rgb(239,185,216);
-    text-decoration: none;
-  }
+      color: #000;
+      text-decoration: none;
+    }
+    &:hover {
+      text-decoration: none;
+      color: #000;
+    }
+  &:hover .menu-desktop__elem-link-inner {
+  background: $pink;
+  text-decoration: none;
+  color: #000;
+}
 }
