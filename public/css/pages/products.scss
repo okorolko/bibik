@@ -33,7 +33,7 @@
 .products__elem_link {
   position: relative;
 }
-.img-overlay {
+.products__elem_img-overlay {
   background: $pink;
   position: absolute;
   opacity: 0;
@@ -41,7 +41,37 @@
   left: 0;
   right: 0;
   bottom: 0;
+  transition: opacity .4s;
+  @include iphone {
+    display: none;
+  }
+  @include ipad {
+    display: none;
+  }
 }
-.products__elem:hover  .img-overlay {
+.products__elem_text-overlay {
+  opacity: 0;
+  font-size: 1.2rem;
+  background: rgba(239,185,216,1);
+  color: black;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  top: 55%;
+  left: 0;
+  right: 0;
+  transition: opacity .2s;
+  @include iphone {
+    display: none;
+  }
+  @include ipad {
+    display: none;
+  }
+}
+.products__elem:hover  .products__elem_img-overlay {
     opacity: .4;
+}
+.products__elem:hover  .products__elem_text-overlay {
+    opacity: 1;
 }
