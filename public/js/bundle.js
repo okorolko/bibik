@@ -14,7 +14,6 @@ window.onload = function() {
 		var item = $('.mobile-modal');
 		var slides = document.querySelectorAll(".swiper-slide").length;
 
-
 		var bodyWrapper = document.querySelectorAll(".main-container")[0];
 		var preloader = document.querySelectorAll(".preloader-container")[0];
 

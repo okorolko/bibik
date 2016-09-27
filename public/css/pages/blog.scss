@@ -1,7 +1,7 @@
 .blog-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 80%;
   @include ipad {
     padding-top: 30px;
