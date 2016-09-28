@@ -1,4 +1,5 @@
-$pink: rgba(239,185,216,0.5);//
+$pink-transparent: rgba(239,185,216,0.8);
+$pink: rgba(239,185,216,1);
 
 @mixin iphone {
   @media (min-device-width: 320px)
@@ -22,7 +23,7 @@ $pink: rgba(239,185,216,0.5);//
 @import "themes/default/variables";
 @import "lib/bootstrap/bootstrap";
 
-@import "pages/index";
+@import "pages/home";
 @import "pages/products";
 @import "pages/product";
 @import "pages/lookbook";

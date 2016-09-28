@@ -5817,6 +5817,14 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.index-container {
+  position: relative;
+  width: 90%;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  padding-top: 10px; }
+
 .products__container {
   position: relative;
   width: 80%;
@@ -5851,7 +5859,7 @@ button.close {
   position: relative; }
 
 .products__elem_img-overlay {
-  background: rgba(239, 185, 216, 0.5);
+  background: #efb9d8;
   position: absolute;
   opacity: 0;
   top: 0;
@@ -6061,13 +6069,16 @@ img {
 
 .mobile-modal.is-active {
   visibility: visible;
-  background-color: rgba(105, 0, 64, 0.4); }
+  background-color: rgba(239, 185, 216, 0.8); }
 
 .header-container {
   position: relative;
   margin: auto;
   height: 100px;
-  width: 100%; }
+  width: 90%; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .header-container {
+      width: 85%; } }
 
 .header-logo {
   text-align: center;
@@ -6111,12 +6122,12 @@ img {
   display: block;
   position: absolute;
   top: 50%;
-  right: 5%;
+  right: 0%;
   transform: translateY(-50%);
   overflow: hidden;
   margin: 0;
   padding: 0;
-  width: 42px;
+  width: 33px;
   height: 42px;
   font-size: 0;
   text-indent: -9999px;
@@ -6134,8 +6145,8 @@ img {
   display: block;
   position: absolute;
   top: 18px;
-  left: 5px;
-  right: 5px;
+  left: 0px;
+  right: 0px;
   height: 5px;
   background: #000; }
 
@@ -6284,7 +6295,7 @@ img {
     text-decoration: none;
     color: #000; }
   .menu-desktop__elem-link:hover .menu-desktop__elem-link-inner {
-    background: rgba(239, 185, 216, 0.5);
+    background: rgba(239, 185, 216, 0.8);
     text-decoration: none;
     color: #000; }
 

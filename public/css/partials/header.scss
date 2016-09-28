@@ -15,13 +15,16 @@
 }
 .mobile-modal.is-active {
   visibility: visible;
-  background-color: rgba(105,0,64,0.4);
+  background-color: $pink-transparent;
 }
 .header-container {
   position: relative;
   margin: auto;
   height: 100px;
-  width: 100%;
+  width: 90%;
+  @include ipad {
+    width: 85%;
+  }
 }
 .header-logo {
   text-align: center;
@@ -65,12 +68,12 @@
   display: block;
   position: absolute;
   top: 50%;
-  right: 5%;
+  right: 0%;
   transform: translateY(-50%);
   overflow: hidden;
   margin: 0;
   padding: 0;
-  width: 42px;
+  width: 33px;
   height: 42px;
   font-size: 0;
   text-indent: -9999px;
@@ -88,8 +91,8 @@
   display: block;
   position: absolute;
   top: 18px;
-  left: 5px;
-  right: 5px;
+  left: 0px;
+  right: 0px;
   height: 5px;
   background: #000;
 }
@@ -260,7 +263,7 @@
       color: #000;
     }
   &:hover .menu-desktop__elem-link-inner {
-  background: rgba(239,185,216,0.5);
+  background: $pink-transparent;
   text-decoration: none;
   color: #000;
 }
