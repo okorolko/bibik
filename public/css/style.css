@@ -5866,13 +5866,7 @@ button.close {
   left: 0;
   right: 0;
   bottom: 0;
-  transition: opacity .3s; }
-  @media (min-device-width: 320px) and (max-device-width: 736px) {
-    .products__elem_img-overlay {
-      display: none; } }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .products__elem_img-overlay {
-      display: none; } }
+  transition: opacity .15s; }
 
 .products__elem_text-overlay {
   opacity: 0;
@@ -5886,27 +5880,13 @@ button.close {
   top: 55%;
   left: 0;
   right: 0;
-  transition: opacity .2s; }
-  @media (min-device-width: 320px) and (max-device-width: 736px) {
-    .products__elem_text-overlay {
-      display: none; } }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .products__elem_text-overlay {
-      display: none; } }
+  transition: opacity .15s; }
 
 .products__elem:hover .products__elem_img-overlay {
   opacity: .4; }
 
 .products__elem:hover .products__elem_text-overlay {
   opacity: 1; }
-
-@media (min-device-width: 320px) and (max-device-width: 736px) {
-  .products__elem:focus .products__elem_img-overlay {
-    opacity: .4; } }
-
-@media (min-device-width: 320px) and (max-device-width: 736px) {
-  .products__elem:focus .products__elem_text-overlay {
-    opacity: 1; } }
 
 .product-picture__container {
   width: 90%;
@@ -5923,12 +5903,12 @@ button.close {
 @media (min-device-width: 320px) and (max-device-width: 736px) {
   .product-description__container,
   .product-title__container {
-    padding-left: 35px; } }
+    padding-left: 45px; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .product-description__container,
   .product-title__container {
-    padding-left: 60px; } }
+    padding-left: 70px; } }
 
 @media (min-width: 1024px) {
   .product-description__container,

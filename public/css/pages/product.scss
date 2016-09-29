@@ -13,10 +13,10 @@
 .product-description__container,
 .product-title__container{
   @include iphone {
-    padding-left: 35px;
+    padding-left: 45px;
   }
   @include ipad {
-    padding-left: 60px;
+    padding-left: 70px;
   }
   @include desktop {
     padding-left: 80px;

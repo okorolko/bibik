@@ -41,18 +41,12 @@
   left: 0;
   right: 0;
   bottom: 0;
-  transition: opacity .3s;
-  @include iphone {
-    display: none;
-  }
-  @include ipad {
-    display: none;
-  }
+  transition: opacity .15s;
 }
 .products__elem_text-overlay {
   opacity: 0;
   font-size: 1.2rem;
-  background: rgba(239,185,216,1);
+  background: $pink;
   color: black;
   position: absolute;
   width: 100%;
@@ -61,27 +55,11 @@
   top: 55%;
   left: 0;
   right: 0;
-  transition: opacity .2s;
-  @include iphone {
-    display: none;
-  }
-  @include ipad {
-    display: none;
-  }
+  transition: opacity .15s;
 }
 .products__elem:hover  .products__elem_img-overlay {
     opacity: .4;
 }
 .products__elem:hover  .products__elem_text-overlay {
     opacity: 1;
-}
-.products__elem:focus  .products__elem_img-overlay {
-  @include iphone {
-    opacity: .4;
-  };
-}
-.products__elem:focus  .products__elem_text-overlay {
-  @include iphone {
-    opacity: 1;
-  }
 }
