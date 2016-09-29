@@ -41,7 +41,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  transition: opacity .4s;
+  transition: opacity .3s;
   @include iphone {
     display: none;
   }
@@ -74,4 +74,14 @@
 }
 .products__elem:hover  .products__elem_text-overlay {
     opacity: 1;
+}
+.products__elem:focus  .products__elem_img-overlay {
+  @include iphone {
+    opacity: .4;
+  };
+}
+.products__elem:focus  .products__elem_text-overlay {
+  @include iphone {
+    opacity: 1;
+  }
 }

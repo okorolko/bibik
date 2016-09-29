@@ -5866,7 +5866,7 @@ button.close {
   left: 0;
   right: 0;
   bottom: 0;
-  transition: opacity .4s; }
+  transition: opacity .3s; }
   @media (min-device-width: 320px) and (max-device-width: 736px) {
     .products__elem_img-overlay {
       display: none; } }
@@ -5899,6 +5899,14 @@ button.close {
 
 .products__elem:hover .products__elem_text-overlay {
   opacity: 1; }
+
+@media (min-device-width: 320px) and (max-device-width: 736px) {
+  .products__elem:focus .products__elem_img-overlay {
+    opacity: .4; } }
+
+@media (min-device-width: 320px) and (max-device-width: 736px) {
+  .products__elem:focus .products__elem_text-overlay {
+    opacity: 1; } }
 
 .product-picture__container {
   width: 90%;
