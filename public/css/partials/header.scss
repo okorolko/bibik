@@ -10,7 +10,7 @@
   z-index: 1;
   background-color: rgba(0,0,0,0);
   transition: background-color, visibility;
-  transition-duration: .8s;
+  transition-duration: .9s;
 }
 .mobile-modal.is-active {
   visibility: visible;
@@ -48,7 +48,7 @@
 .header-logo.is-active {
   fill: rgb(255,255,255);
   transition: fill;
-  transition-duration: .6s;
+  transition-duration: .65s;
 }
 .navigation-bar {
   display: -webkit-box;
@@ -118,12 +118,12 @@
   background-color: rgba(0,0,0,0);
 }
 .c-hamburger--htx span {
-  transition: background, background-color 0.25s 0.25s;
+  transition: background, background-color 0.3s 0.3s;
 }
 .c-hamburger--htx span::before,
 .c-hamburger--htx span::after {
-  transition-duration: 0.25s, 0.25s;
-  transition-delay: 0.25s, 0s;
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
 }
 .c-hamburger--htx span::before {
   transition-property: top, transform;
@@ -163,7 +163,7 @@
   background: #000;
   z-index: 1;
   transition: height;
-  transition-duration: .3s;
+  transition-duration: .45s;
   overflow: hidden;
 }
 .mobile-menu__container.is-active {
