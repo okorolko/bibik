@@ -9,18 +9,19 @@
 		var slidingPart = document.querySelectorAll(".mobile-menu__container")[0];
 		var headerLogo = document.querySelectorAll(".header-logo")[0];
 		var slidingPartText = document.querySelectorAll(".mobile-menu")[0];
-		var link = $(".mobile-menu__elem-link");
-		var item = $('.mobile-menu__container');
+		var mobileLink = $(".mobile-menu__elem-link");
+		var productsLink = $('.products__elem_link');
+		var mobileButton = $('.c-hamburger--htx span');
 
 		//mobile link click
-		link.click(function(e) {
+		mobileLink.click(function(e) {
 			e.preventDefault();
 			menuEventsHandler(navIcon, modal, slidingPart, headerLogo, slidingPartText)
-			var self = this;
-			item.one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
+
+			mobileButton.one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
 				function() {
-					window.location = self.href;
-				});
+					window.location.assign(this.href);
+				}.bind(this));
 		})
 
 		navIcon.addEventListener("click", function(e) {
@@ -31,6 +32,11 @@
 		modal.addEventListener("click", function(e) {
 			e.preventDefault();
 			menuEventsHandler(navIcon, modal, slidingPart, headerLogo, slidingPartText)
+		});
+
+		productsLink.click(function(e) {
+			e.preventDefault();
+			window.location.assign(this.href)
 		});
 
 		//Toggle class is-active

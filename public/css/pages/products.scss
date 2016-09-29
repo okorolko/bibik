@@ -27,13 +27,14 @@
     align-self: center;
     width: 33.33%;
     padding: 30px 20px
+
   }
 }
-
 .products__elem_link {
   position: relative;
 }
 .products__elem_img-overlay {
+  @include desktop {
   background: $pink;
   position: absolute;
   opacity: 0;
@@ -43,7 +44,15 @@
   bottom: 0;
   transition: opacity .15s;
 }
+}
 .products__elem_text-overlay {
+  @include iphone {
+    display: none;
+  }
+  @include ipad {
+    display: none;
+  }
+  @include desktop {
   opacity: 0;
   font-size: 1.2rem;
   background: $pink;
@@ -56,12 +65,11 @@
   left: 0;
   right: 0;
   transition: opacity .15s;
+  }
 }
-.products__elem:hover  .products__elem_img-overlay,
-.products__elem:focus  .products__elem_img-overlay {
+.products__elem:hover  .products__elem_img-overlay {
     opacity: .4;
 }
-.products__elem:hover  .products__elem_text-overlay,
-.products__elem:focus  .products__elem_text-overlay {
+.products__elem:hover  .products__elem_text-overlay {
     opacity: 1;
 }
