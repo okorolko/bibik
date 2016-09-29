@@ -58,10 +58,10 @@
   transition: opacity .15s;
 }
 .products__elem:hover  .products__elem_img-overlay,
-.products__elem:active  .products__elem_img-overlay {
+.products__elem:focus  .products__elem_img-overlay {
     opacity: .4;
 }
 .products__elem:hover  .products__elem_text-overlay,
-.products__elem:active  .products__elem_text-overlay {
+.products__elem:focus  .products__elem_text-overlay {
     opacity: 1;
 }
