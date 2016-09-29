@@ -11,14 +11,14 @@
 		var slidingPartText = document.querySelectorAll(".mobile-menu")[0];
 		var mobileLink = $(".mobile-menu__elem-link");
 		var productsLink = $('.products__elem_link');
-		var mobileButton = $('.c-hamburger--htx span');
+		var mobileMenuModal = $('.mobile-modal');
 
 		//mobile link click
 		mobileLink.click(function(e) {
 			e.preventDefault();
 			menuEventsHandler(navIcon, modal, slidingPart, headerLogo, slidingPartText)
 
-			mobileButton.one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
+			mobileMenuModal.one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
 				function() {
 					window.location.assign(this.href);
 				}.bind(this));

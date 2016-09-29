@@ -529,7 +529,7 @@ img {
   z-index: 1;
   background-color: transparent;
   transition: background-color, visibility;
-  transition-duration: .9s; }
+  transition-duration: .6s; }
 
 .mobile-modal.is-active {
   visibility: visible;
@@ -680,7 +680,7 @@ img {
   background: #000;
   z-index: 1;
   transition: height;
-  transition-duration: .45s;
+  transition-duration: .4s;
   overflow: hidden; }
 
 .mobile-menu__container.is-active {
