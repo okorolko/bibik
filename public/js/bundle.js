@@ -1,4 +1,3 @@
-window.onload = function() {
 
 //Mobile/Desktop menu control
 	(function() {
@@ -11,9 +10,7 @@ window.onload = function() {
 		var headerLogo = document.querySelectorAll(".header-logo")[0];
 		var slidingPartText = document.querySelectorAll(".mobile-menu")[0];
 		var link = $(".mobile-menu__elem-link");
-		// var desktopLink = $('.menu-desktop__elem-link')
-		var item = $('.mobile-modal');
-		// var slides = document.querySelectorAll(".swiper-slide").length;
+		var item = $('.mobile-menu__container');
 
 		//mobile link click
 		link.click(function(e) {
@@ -47,6 +44,8 @@ window.onload = function() {
 	})();
 
 // Removes ".not-active" class on window load
+window.onload = function() {
+
 (function() {
 	var bodyWrapper = document.querySelectorAll(".main-container")[0];
 	var preloader = document.querySelectorAll(".preloader-container")[0];

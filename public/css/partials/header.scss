@@ -11,7 +11,6 @@
   background-color: rgba(0,0,0,0);
   transition: background-color, visibility;
   transition-duration: .8s;
-  transition-delay: .2s;
 }
 .mobile-modal.is-active {
   visibility: visible;
@@ -30,7 +29,7 @@
   text-align: center;
   font-size: 4rem;
   margin: 0;
-  fill: #000;
+  fill: rgb(0,0,0);
   z-index: 5;
   position: absolute;
   top: 50%;
@@ -47,9 +46,9 @@
   }
 }
 .header-logo.is-active {
-  fill: #fff;
+  fill: rgb(255,255,255);
   transition: fill;
-  transition-duration: 1s;
+  transition-duration: .6s;
 }
 .navigation-bar {
   display: -webkit-box;
@@ -94,9 +93,8 @@
   left: 0px;
   right: 0px;
   height: 5px;
-  background: #000;
+  background: rgb(0, 0, 0);
 }
-
 .c-hamburger span::before,
 .c-hamburger span::after {
   position: absolute;
@@ -104,7 +102,7 @@
   left: 0;
   width: 100%;
   height: 5px;
-  background-color: #000;
+  background-color: rgb(0,0,0);
   content: "";
 }
 .c-hamburger span::before {
@@ -120,12 +118,12 @@
   background-color: rgba(0,0,0,0);
 }
 .c-hamburger--htx span {
-  transition: background, background-color 0s 0.3s;
+  transition: background, background-color 0.25s 0.25s;
 }
 .c-hamburger--htx span::before,
 .c-hamburger--htx span::after {
-  transition-duration: 0.3s, 0.3s;
-  transition-delay: 0.35s, 0s;
+  transition-duration: 0.25s, 0.25s;
+  transition-delay: 0.25s, 0s;
 }
 .c-hamburger--htx span::before {
   transition-property: top, transform;
@@ -152,10 +150,9 @@
   transform: rotate(-45deg);
   background-color: #fff;
 }
-
 .c-hamburger--htx.is-active span::before,
 .c-hamburger--htx.is-active span::after {
-  transition-delay: 0s, 0.35s;
+  transition-delay: 0s, 0.25s;
 }
 .mobile-menu__container {
   position: absolute;
@@ -166,7 +163,7 @@
   background: #000;
   z-index: 1;
   transition: height;
-  transition-duration: .6s;
+  transition-duration: .3s;
   overflow: hidden;
 }
 .mobile-menu__container.is-active {
@@ -178,7 +175,7 @@
   color: #fff;
   opacity: 0;
   transition: opacity;
-  transition-duration: 1.5s;
+  transition-duration: .6s;
 }
 .mobile-menu.is-active {
   opacity: 1;
@@ -191,13 +188,12 @@
   font-size: 1.5rem;
   text-align: center;
   color: inherit;
-  transition: color .2s ease-in-out;
   &:focus {
     color: rgb(255,255,255);
     text-decoration: none;
   }
   &:hover {
-    color: rgb(239,185,216);
+    color: $pink;
     text-decoration: none;
   }
 }
@@ -234,18 +230,6 @@
     display: none;
   }
 }
-// .menu-desktop__elem-link {
-//   color: #000;
-//   transition: color .15s ease-in-out;
-//   &:focus {
-//     color: #000;
-//     text-decoration: none;
-//   }
-//   &:hover {
-//     // color: rgb(239,185,216);
-//     text-decoration: none;
-//   }
-// }
 .menu-desktop__elem-link-inner {
   padding: 10px 30px;
   border-radius: 1px;

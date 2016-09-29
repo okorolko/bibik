@@ -1,4 +1,4 @@
-$pink-transparent: rgba(239,185,216,0.8);
+$pink-transparent: rgba(239,185,216,0.6);
 $pink: rgba(239,185,216,1);
 
 @mixin iphone {
@@ -20,7 +20,6 @@ $pink: rgba(239,185,216,1);
   }
 }
 
-@import "themes/default/variables";
 @import "lib/bootstrap/bootstrap";
 
 @import "pages/home";
