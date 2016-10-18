@@ -529,11 +529,11 @@ exports.getLinkedin = (req, res, next) => {
  */
 exports.getInstagram = (req, res, next) => {
 	ig.use({
-		client_id: 'eff4fac9de4e45de8373df4f40607bc1',
-		client_secret: '63061fabbf424fa39b6911a304df9186'
+		client_id: '492dad951953420f930719e75b66b714',
+		client_secret: '046895eccf0746a484c689fe55c7fc17'
 	});
 	ig.use({
-		access_token: '2058837146.1677ed0.15bc4cc9140b41d69adef381624d1719'
+		access_token: '2058837146.1677ed0.dcb3a26e967c479299e0c1ed5be29ecb'
 	});
 	async.parallel({
 		myRecentMedia: (done) => {
