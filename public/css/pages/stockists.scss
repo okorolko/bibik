@@ -1,0 +1,23 @@
+.stockists-at {
+  align-self: center;
+  text-align: center;
+  margin-top: -60px;
+  font-size: 3.5rem;
+}
+.stockists-text {
+  font-size: 1.35rem;
+}
+.stockists-text {
+  align-self: center;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 1.35rem;
+  color: black;
+  &:hover {
+    color: $pink;
+  }
+}
+.info-bottom-part {
+  margin-top: -50px;
+  text-align: center;
+}

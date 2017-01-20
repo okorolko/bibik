@@ -131,6 +131,8 @@ app.get('/products/', homeController.products);
 app.get('/lookbook', homeController.lookbook);
 app.get('/products/:product', homeController.product);
 app.get('/info', homeController.info);
+app.get('/stockists', homeController.stockists);
+
 // app.get('/login', userController.getLogin);
 // app.post('/login', userController.postLogin);
 // app.get('/logout', userController.logout);

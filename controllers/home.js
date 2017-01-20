@@ -14,6 +14,12 @@ exports.info = (req, res) => {
 	});
 };
 
+exports.stockists = (req, res) => {
+	res.render('stockists', {
+		title: 'Stockists'
+	});
+};
+
 exports.products = (req, res) => {
 	res.render('products', {
 		title: 'Products',

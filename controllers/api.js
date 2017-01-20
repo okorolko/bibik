@@ -533,11 +533,11 @@ exports.getInstagram = (req, res, next) => {
 		client_secret: '046895eccf0746a484c689fe55c7fc17'
 	});
 	ig.use({
-		access_token: '2058837146.1677ed0.dcb3a26e967c479299e0c1ed5be29ecb'
+		access_token: '2058837146.1677ed0.95dff1c1ee7945429c6cdc49fb1bc2d5'
 	});
 	async.parallel({
 		myRecentMedia: (done) => {
-			ig.user_self_media_recent((err, medias) => {
+			ig.user_self_media_recent({count: 60}, (err, medias) => {
 				done(err, medias);
 			});
 		}

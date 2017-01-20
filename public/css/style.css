@@ -519,6 +519,28 @@ img {
 .wrap {
   padding: 0 40px; }
 
+.stockists-at {
+  align-self: center;
+  text-align: center;
+  margin-top: -60px;
+  font-size: 3.5rem; }
+
+.stockists-text {
+  font-size: 1.35rem; }
+
+.stockists-text {
+  align-self: center;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 1.35rem;
+  color: black; }
+  .stockists-text:hover {
+    color: #efb9d8; }
+
+.info-bottom-part {
+  margin-top: -50px;
+  text-align: center; }
+
 .mobile-modal {
   visibility: hidden;
   position: absolute;
@@ -718,7 +740,7 @@ img {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  width: 650px;
+  width: 750px;
   align-items: center;
   margin: auto;
   padding: 7px;

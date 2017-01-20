@@ -57,6 +57,17 @@ exports.products = {
 		prototype1: path + 'asocial__t-shirt-fa-bw-proto-1.jpg',
 		prototype2: path + 'asocial__t-shirt-fa-bw-proto-2.jpg'
 	},
+	"asocial__t-shirt-fa-colour": {
+		id: "asocial__t-shirt-fa-colour",
+		name: 'T-shirt Fa colour',
+		sizes: 'sizes: S, M, L',
+		price: 'price: 2500 RUB',
+		material: '100% cotton',
+		decoration: 'embroidery',
+		src: path + 'asocial__t-shirt-fa-colour.jpg',
+		prototype1: path + 'asocial__t-shirt-fa-colour-proto-1.jpg',
+		prototype2: path + 'asocial__t-shirt-fa-colour-proto-2.jpg'
+	},
 	"asocial__t-shirt-fa-white-1": {
 		id: "asocial__t-shirt-fa-white-1",
 		name: 'T-shirt Fa white',
