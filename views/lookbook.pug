@@ -4,4 +4,7 @@ block content
     .lookbook-container
         each item, index in lookbook
             .lookbook__elem
-                img(src=item)
+                img(data-original=item)
+                //- img(src=item)
+
+//- <img data-original="/your/image1.jpg" width="100" height="172">

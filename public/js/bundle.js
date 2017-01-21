@@ -63,3 +63,28 @@ window.onload = function() {
 }())
 
 }
+
+
+
+var myLazyLoad = new LazyLoad();
+
+// $(window).scroll(function() {
+// 	var loaded = true;
+
+//    if (loaded && ($(window).scrollTop() + $(window).height() > $(document).height() - 100)) {
+//        console.log("near bottom!");
+
+// 	$.get( "/lookbooknext", function( data ) {
+// 		loaded = false;
+// 		data.forEach(function(src) {
+// 			// console.log(src)
+// 			$( ".lookbook-container" ).append( '<div class=".lookbook__elem"><img src=' + src + '></div>' );
+// 		})
+// 		loaded = true;
+// 	});
+
+//    }
+// });
+// .lookbook-container
+// .lookbook__elem
+//                 img(src=item)
